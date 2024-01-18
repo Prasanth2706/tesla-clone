@@ -6,13 +6,13 @@ import { selectCars } from '../features/Car/CarSlice';
 import { useSelector } from 'react-redux';
 
 const Header = () => {
-
     const [burgerStatus, setburgerStatus] = useState(false);
+    const [shop, setShop] = useState(false);
     const cars = useSelector(selectCars)
 
     return (
         <Container>
-            <a>
+            <a href="https://www.tesla.com/" target="_blank" rel="noopener noreferrer">
                 <img src="/images/logo.svg" alt="" />
             </a>
             <Menu>
@@ -22,10 +22,10 @@ const Header = () => {
             </Menu>
 
             <RightMenu>
-                <a href='#'>Shop</a>
+                <a onMouseEnter={() => setShop(true)}
+                    onMouseLeave={() => setShop(false)} href='#'>Shop</a>
                 <a href='#'>Tesla Account</a>
             </RightMenu>
-
             <CustomMenu onClick={() => setburgerStatus(true)} />
             <BurgerNav show={burgerStatus}>
                 <CloseWrapper>
@@ -40,11 +40,34 @@ const Header = () => {
                 <li><a href="#">CyberTruck</a></li>
                 <li><a href="#">Roadster</a></li>
             </BurgerNav>
+            {shop &&
+                <Discover display={shop} onMouseEnter={() => setShop(true)}
+                    onMouseLeave={() => setShop(false)}>
+
+                    <Charging>
+                        <img src='/images/accessories.jpg' alt='' />
+                        <p>Charging</p>
+                    </Charging>
+                    <VehicleAcc>
+                        <img src='/images/tesla-wheel.jpg' alt='' />
+                        <p>Vehicle Accessories</p>
+                    </VehicleAcc>
+                    <Apparel>
+                        <img src='/images/tesla-cap.jpg' alt='' />
+                        <p>Apparel</p>
+                    </Apparel>
+                    <LifeStyle>
+                        <img src='/images/bag.jpg' alt='' />
+                        <p>LifeStyle</p>
+                    </LifeStyle>
+                </Discover>
+            }
         </Container>
     )
 }
 
 export default Header
+
 
 const Container = styled.div`
     min-height: 60px;
@@ -57,6 +80,9 @@ const Container = styled.div`
     right: 0;
     z-index: 1;
     padding: 0 20px;
+    a{
+        cursor: pointer;
+    }
 
 `
 const Menu = styled.div`
@@ -122,7 +148,6 @@ const BurgerNav = styled.div`
         }
 
     }
-
 `
 
 const CustomClose = styled(CloseIcon)`
@@ -132,6 +157,44 @@ const CustomClose = styled(CloseIcon)`
 const CloseWrapper = styled.div`
     display: flex;
     justify-content: flex-end;
+`
 
+const Discover = styled.div`
+     img {
+        height: 9rem;
+        width:9rem;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 18px;
+    }
+    transform: ${props => props.display ? 'translateY(0)' : 'translateY(100%)'};
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    height: 14rem;
+    background: white;
+    z-index: 17;
+    transition: transform 1s;
+
+`
+const Charging = styled.div`
+
+`
+const VehicleAcc = styled.div`
+
+`
+const Apparel = styled.div`
+
+`
+const LifeStyle = styled.div`
 
 `
