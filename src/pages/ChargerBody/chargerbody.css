@@ -1,0 +1,82 @@
+/* .charger_body{
+    background-color: black;
+} */
+
+.join_wrap {
+    /* padding: 2rem 5rem; */
+    background: black;
+}
+
+.main_heading {
+    display: flex;
+    color: white;
+    font-size: 30px;
+}
+
+.main_heading p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 2rem;
+}
+
+.main_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.chargers_image {
+    height: 30rem;
+    width: 35rem;
+}
+
+.charger_info {
+    margin: 10px;
+}
+
+.charger_content p {
+    color: white;
+}
+
+.charger_content {
+    margin: 4px 0 0 0;
+}
+
+.charger_name p {
+    font-size: 15px;
+}
+
+.charger_price p {
+    font-size: 15px;
+}
+
+.main_subtitle_part {
+    margin-top: 3rem;
+}
+
+.footer_part {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer_left_section {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+.footer_middle_section {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+.footer_right_section {
+    font-size: 15px;
+}

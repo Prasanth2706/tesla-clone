@@ -1,0 +1,12 @@
+
+.subtitle {
+    display: flex;
+}
+
+.sub_value {
+    color: white;
+    margin: 0 0 1rem 2rem;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+

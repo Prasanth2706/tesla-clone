@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
+import { Images } from '../images';
 
 const Section = ({ title, description, leftBtnText, rightBtnText, backgroundImg }) => {
     return (
@@ -22,7 +23,7 @@ const Section = ({ title, description, leftBtnText, rightBtnText, backgroundImg 
                         {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
                     </ButtonGroup>
                 </Fade>
-                <DownArrow src="images/down-arrow.svg" />
+                <DownArrow src={Images.down_arrow} />
             </Buttons>
         </Wrap>
     )
@@ -40,7 +41,7 @@ const Wrap = styled.div`
     flex-direction: column; 
     justify-content: space-between;// vertical
     align-items: center; // horizontal
-    background-image:${props => `url("/images/${props.bgImage}")`}
+    background-image:${props => props.backgroundImg}
 `
 
 const ItemText = styled.div`

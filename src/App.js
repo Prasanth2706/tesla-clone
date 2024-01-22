@@ -4,12 +4,16 @@ import './App.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Section from './components/Section';
+import ChargerHeader from './components/Header/index';
+import ChargerBody from './pages/ChargerBody';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Home />
+      {/* <Header />
+      <Home /> */}
+      <ChargerBody />
+      {/* <ChargerHeader/> */}
     </div>
   );
 }

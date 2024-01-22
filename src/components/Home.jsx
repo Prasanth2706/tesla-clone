@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
+import { Images } from '../images'
 const Home = () => {
     return (
 
@@ -8,44 +9,44 @@ const Home = () => {
             <Section
                 title='Modal S'
                 description="Order Online for Touchless Delivery"
-                backgroundImg='model-s.jpg'
+                backgroundImg={Images.modal_s}
                 leftBtnText='Custom order'
                 rightBtnText="Existing Inventory"
             />
             <Section
                 title='Modal Y'
                 description="Order Online for Touchless Delivery"
-                backgroundImg='model-y.jpg'
+                backgroundImg={Images.modal_y}
                 leftBtnText='Custom order'
                 rightBtnText="Existing Inventory" />
             <Section
                 title='Modal 3'
                 description="Order Online for Touchless Delivery"
-                backgroundImg='model-3.jpg'
+                backgroundImg={Images.modal_3}
                 leftBtnText='Custom order'
                 rightBtnText="Existing Inventory" />
             <Section
                 title='Modal X'
                 description="Order Online for Touchless Delivery"
-                backgroundImg='model-x.jpg'
+                backgroundImg={Images.modal_x}
                 leftBtnText='Custom order'
                 rightBtnText="Existing Inventory" />
             <Section
                 title='Lowest Cost Solar Panel in America'
                 description="Money-back gurantee"
-                backgroundImg='solar-panel.jpg'
+                backgroundImg={Images.solar_panels}
                 leftBtnText='order now'
                 rightBtnText="learn more" />
             <Section
                 title='Solar New Roof'
                 description="Solar Roof Costs Less Than a New Roof Plus Panels"
-                backgroundImg='solar-roof.jpg'
+                backgroundImg={Images.solar_roof}
                 leftBtnText='order now'
                 rightBtnText="learn more" />
             <Section
                 title='Accessories'
                 description="Solar Roof Costs Less Than a New Roof Plus Panels"
-                backgroundImg='accessories.jpg'
+                backgroundImg={Images.accessories}
                 leftBtnText='order now'
             />
         </Container>
