@@ -3,6 +3,7 @@ export const Images = {
     cart: require('./cart.png'),
     wallconnector: require('./wall-connector.jpeg'),
     wallconnector2: require('./wall-connector2.jpeg.jpeg'),
+    wallconnector3: require('./wall-connector-charger.jpeg'),
     universalconnector: require('./universal-connector.jpeg'),
     mobileconnector: require('./mobile-connctor.jpeg'),
     nemaadaptor: require('./nema-adaptor.jpeg'),
@@ -29,6 +30,9 @@ export const Images = {
     pedestal2: require('./pedestal-connector2.jpeg'),
     glass_faceplate: require('./glass-faceplate.jpeg'),
     glass_faceplate2: require('./glass-faceplate2.jpeg'),
-    cable_organizer :require('./cable-organizer.jpeg'),
+    cable_organizer: require('./cable-organizer.jpeg'),
+    cyberShirt: require('./cybershirt.jpeg'),
+    cyberCrossbar: require('./cybertruckCrossbar.jpeg'),
+    cyberquad: require('./cyberquad2.jpeg')
 
 }

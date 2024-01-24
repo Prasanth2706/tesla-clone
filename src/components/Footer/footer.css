@@ -1,0 +1,28 @@
+.footer_part {
+    background-color: black;
+    color: lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer_left_section {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+.footer_middle_section {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-right: 1rem;
+}
+
+.footer_right_section {
+    font-size: 15px;
+}

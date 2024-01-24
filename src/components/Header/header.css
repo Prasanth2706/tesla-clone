@@ -8,9 +8,11 @@
     display: flex;
     flex-direction: row;
     margin: 0 0 0 12px;
+    cursor: pointer;
     align-items: center;
 }
-.left_title{
+
+.left_title {
     color: white;
     font-size: 15px;
 }
@@ -20,7 +22,7 @@
     color: white;
 }
 
-.menu{
+.menu {
     font-size: 15px;
 }
 
@@ -34,6 +36,7 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    cursor: pointer;
     align-items: center;
     color: #C7C7C7;
 }
@@ -45,7 +48,8 @@
 .right_section {
     display: flex;
     gap: 1rem;
-    margin: 0 12px;
+    margin: 0 17px;
+    cursor: pointer;
     align-items: center;
 }
 
@@ -57,7 +61,29 @@
     height: 27px;
 }
 
-.middle_section{
+.middle_section {
     font-size: 15px;
 
+}
+.charger_header {
+    position: relative;
+    z-index: 1;
+}
+
+.blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+    display: none;
+    transition: opacity 5s ease-in-out; /* Add a transition for opacity */
+
+}
+
+.charger_header.blur .blur-overlay {
+    display: block;
 }

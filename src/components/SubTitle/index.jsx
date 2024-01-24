@@ -1,10 +1,10 @@
 import React from 'react'
 import './subtitle.css'
 
-const Subtitle = ({value}) => {
+const Subtitle = ({ value, className }) => {
   return (
     <div className='subtitle'>
-        <p className='sub_value'>{value}</p>
+      <p className={className ? 'access_sub_value' : 'sub_value'}>{value}</p>
     </div>
   )
 }

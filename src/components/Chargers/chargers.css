@@ -1,0 +1,27 @@
+.charger_section {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 20rem;
+    color: white;
+    justify-content: space-around;
+}
+
+.charger_types {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3rem;
+    margin-right: 1rem;
+}
+.charger_types p {
+    margin-right: 7rem;
+}
+/* 
+
+.charger_image {
+    margin-right: -12rem;
+}
+
+.charger_container {
+    margin-top: 3rem;
+} */

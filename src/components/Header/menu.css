@@ -1,0 +1,55 @@
+.menu_section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: black;
+    width: 27rem;
+    z-index: 16;
+    color: white;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: start;
+}
+
+.menu_section {
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu_section.open {
+    transform: translateX(0);
+}
+
+.close_icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.menu_language {
+    display: flex;
+}
+
+.menu_area>li>a {
+    font-size: 15px;
+    transition: color 0.3s;
+    color: white;
+}
+
+.menu_country p {
+    font-size: 17px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+}
+
+.menu_area>li>a:hover {
+    color: lightgray;
+}
+
+.menu_area li {
+    margin-bottom: 2rem;
+}

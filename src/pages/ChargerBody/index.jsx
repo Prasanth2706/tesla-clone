@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import { Images } from '../../images';
 import { selectCharger } from '../../features/Car/Charging/ChargingSlice';
 import { selectPart } from '../../features/Car/Charging/parts';
+import Footer from '../../components/Footer';
 
 const ChargerBody = () => {
   const [hoverChargerID, sethoverChargerID] = useState(null)
@@ -77,7 +78,7 @@ const ChargerBody = () => {
           )}
         </div>
       </div>
-      <div className='footer_part'>
+      {/* <div className='footer_part'>
         <div className='footer_left_section'>
           <p>TESLA</p>
           <p>@</p>
@@ -89,7 +90,8 @@ const ChargerBody = () => {
         </div> <div className='footer_right_section'>
           <p>LOCATIONS</p>
         </div>
-      </div>
+      </div> */}
+      <Footer />
     </>
   )
 }

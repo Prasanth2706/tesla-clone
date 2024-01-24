@@ -1,0 +1,14 @@
+.access_list {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
+ul {
+    list-style: none;
+}
+
+ul>li {
+    margin-bottom: 19px;
+    font-size: 14px;
+}

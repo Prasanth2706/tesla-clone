@@ -26,6 +26,7 @@
 .chargers_image {
     height: 30rem;
     width: 35rem;
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 96% 100%, 0 100%);
 }
 
 .charger_info {
@@ -54,7 +55,7 @@
 
 .footer_part {
     background-color: black;
-    color: white;
+    color: lightgray;
     display: flex;
     flex-direction: row;
     padding: 1rem;
