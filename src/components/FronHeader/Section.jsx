@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
-import { Images } from '../images';
+import { Images } from '../../images';
 
 const Section = ({ title, description, leftBtnText, rightBtnText, backgroundImg }) => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Section from './Section'
-import { Images } from '../images'
+import { Images } from '../../images'
 const Home = () => {
     return (
 

@@ -15,6 +15,24 @@
     margin: 0;
     font-size: 15px;
     font-weight: 600;
-    /* padding: 22px; */
+    /* padding: 22px;    */
     margin-bottom: 1rem;
+}
+
+.cart_subvalue {
+    display: flex;
+    padding: 2rem 77rem 2rem 5rem;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.cart_subvalue p {
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.cart_detail{
+    width: 34rem;
+    margin-left: 24rem;
 }

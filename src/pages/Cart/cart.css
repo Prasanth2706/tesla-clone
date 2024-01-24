@@ -1,0 +1,51 @@
+.cart_content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: black;
+    height: 89vh;
+}
+
+.cart_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.continue_shoppping {
+    margin-right: 1rem;
+    background-color: #3B3C36;
+    border-top-color: #848482;
+    color: lightgray;
+    width: 22rem;
+    padding: 15px 15px 10px 15px;
+}
+
+.sign_in {
+    width: 18rem;
+    padding: 15px 15px 7px 15px;
+    background: black;
+    color: lightgray;
+    border-style: groove;
+}
+
+.cart_detail p {
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+
+.detail_value {
+    color: lightgray;
+}
+
+.app-container {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cart {
+    overflow: auto;
+    flex: 1;
+}
